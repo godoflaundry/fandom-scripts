@@ -1,0 +1,77 @@
+.podfic {
+  width: auto;
+  max-width: 900px;
+  margin: auto;
+}
+
+.podfic p {
+  margin: 0px;
+}
+
+.podfic .cover {
+  display: inline-block;
+  float: left;
+  margin-right: 30px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.podfic .cover img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.podfic .content {
+  display: inline-block;
+  max-width: 100%;
+  width: 400px;
+}
+
+.podfic .content ul {
+  margin: 0;
+  padding: 0;
+}
+
+.podfic .content li {
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin: 10px 0 10px 0;
+}
+
+.podfic .content h3 {
+  margin-top: 20px;
+}
+
+/* makes sure fic is displayed under coverart */
+.fic p {
+  float: none;
+  display: block;
+  clear: both;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #b5b5b5;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+h2:not(.title) {
+  border-bottom: 5px solid #7a0000;
+}
+
+th {
+  background-color: #565656;
+  font-weight: bold;
+  color: white;
+}
