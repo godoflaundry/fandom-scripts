@@ -48,17 +48,14 @@ function mdzs() {
   
   //Zidian (紫电, Zǐdiàn)
   body.replaceText("(Z|z)i(D|d)ian", "Zǐdiàn");
-  body.replaceText("ZiDian", "Zǐdiàn");
   
   // Chenqing  陈情 Chén qíng
-  body.replaceText("Chenqing", "Chénqíng");
-  body.replaceText("ChenQing", "Chénqíng");
+  body.replaceText("(C|c)hen(Q|q)ing", "Chénqíng");
   
   //Suibian 随便 Suíbiàn
-  body.replaceText("Suibian", "Suíbiàn");
-  body.replaceText("SuiBian", "Suíbiàn");
+  body.replaceText("(S|s)ui(B|b)ian", "Suíbiàn");
   
-  body.replaceText("Jiang", "Jiāng");
+  body.replaceText("(J|j)iang", "Jiāng");
   
   
   /**
@@ -67,47 +64,33 @@ function mdzs() {
    **
   **/
   //Lanling Jin Sect (兰陵金氏, Lánlíng Jīn Shì)
-  body.replaceText("LanLing Jin", "Lánlíng Jīn");
-  body.replaceText("Lanling Jin", "Lánlíng Jīn");
-  body.replaceText("Lanling jin", "Lánlíng Jīn");
-  body.replaceText("LanLingJin", "Lánlíng Jīn");
-  body.replaceText("LanLingjin", "Lánlíng Jīn");
-  body.replaceText("Lanlingjin", "Lánlíng Jīn");
-  body.replaceText("LanLing Jin Shi", "Lánlíng Jīn Shì");
-  body.replaceText("LanlingJin Shi", "Lánlíng Jīn Shì");
+  body.replaceText("(L|l)an(L|l)ing?.(J|j)in?.(S|s)hi", "Lánlíng Jīn Shì");
+  body.replaceText("(L|l)an(L|l)ing?.(J|j)in", "Lánlíng Jīn");
+  body.replaceText("(L|l)an(L|l)ing", "Lánlíng");
   
   //Jin Zixuan (金子轩, Jīn Zixuān)
-  body.replaceText("Jin ZiXuan", "Jīn Zixuān");
-  body.replaceText("Jin Zixuan", "Jīn Zixuān");
+  body.replaceText("(J|j)in?.(Z|z)i(X|x)uan", "Jīn Zixuān");
   
   //Jin Ling (金凌, Jīn Líng), courtesy name Jin Rulan (金如兰, Jīn Rúlán)
-  body.replaceText("Jin Ling", "Jīn Líng");
-  body.replaceText("Jin Rulan", "Jīn Rúlán");
+  body.replaceText("(J|j)in?.(L|l)ing", "Jīn Líng");
+  body.replaceText("(J|j)in?.(R|r)u(L|l)an", "Jīn Rúlán");
   
   //Jin Guangshan (金光善, Jīn Guāngshàn)
-  body.replaceText("Jin Guangshan", "Jīn Guāngshàn");
-  body.replaceText("Jin GuangShan", "Jīn Guāngshàn");
+  body.replaceText("(J|j)in?.(G|g)uang(S|s)han", "Jīn Guāngshàn");
   
   //Jin Guangyao (金光瑶, Jīn Guāngyáo), birth name Meng Yao (孟瑶, Mèng Yáo)
-  body.replaceText("Jin GuangYao", "Jīn Guāngyáo");
-  body.replaceText("Jin Guangyao", "Jīn Guāngyáo");
-  body.replaceText("Meng Yao", "Mèng Yáo");
+  body.replaceText("(J|j)in?.(G|g)uang(Y|y)ao", "Jīn Guāngyáo");
+  body.replaceText("(M|m)eng?.(Y|y)ao", "Mèng Yáo");
   
   //Mo Xuanyu (莫玄羽, Mò Xuányǔ) 
-  body.replaceText("Mo XuanYu", "Mò Xuányǔ");
-  body.replaceText("Mo Xuanyu", "Mò Xuányǔ");
-  body.replaceText("Senior Mo", "Senior Mò");
+  body.replaceText("(M|m)o?.(X|x)uan(Y|y)u", "Mò Xuányǔ");
+  body.replaceText("(S|s)enior (M|m)o", "Senior Mò");
   
   //Mian Mian (Chinese: 绵绵; Miánmián)
-  body.replaceText("Mian Mian", "Miánmián");
-  body.replaceText("MianMian", "Miánmián");
-  body.replaceText("Mianmian", "Miánmián");
+  body.replaceText("(M|m)ian?.(M|m)ian", "Miánmián");
   
   //Carp Tower (金鳞台, Jīnlín Tái; also: Koi Tower, Jinlin Tower
-  body.replaceText("JinLin Tower", "Jīnlín Tower");
-  body.replaceText("Jinlin Tower", "Jīnlín Tower");
-  body.replaceText("JinLin tower", "Jīnlín Tower");
-  body.replaceText("Jinlin tower", "Jīnlín Tower");
+  body.replaceText("(J|j)in(L|l)in?.(T|t)ower", "Jīnlín Tower");
   
   
   /**
@@ -127,9 +110,7 @@ function mdzs() {
   body.replaceText("(H|h)an(G|g)uan?.(J|j)un", "Hánguāng-jūn");
   
   //Lan Qiren (蓝启仁, Lán Qǐrén) 
-  body.replaceText("Lan Qiren", "Lán Qǐrén");
-  body.replaceText("Lan QiRen", "Lán Qǐrén");
-  body.replaceText("Lan Quiren", "Lán Qǐrén");
+  body.replaceText("(L|l)an?.(Q|q)ui(R|r)en", "Lán Qǐrén");
   
   //Lan Huan (蓝涣, Lán Huàn), courtesy name Lan Xichen (蓝曦臣, Xīchén) and title Zewu-Jun (泽芜君, Zéwú-jūn)
   body.replaceText("(L|l)an?.(H|h)uan", "Lán Huàn");
@@ -168,20 +149,15 @@ function mdzs() {
    **
   **/
   //Qinghe Nie Sect (清河聂氏, Qīnghé Niè Shì) 
-  body.replaceText("Qinghe Nie", "Qīnghé Niè");
-  body.replaceText("QingHe Nie", "Qīnghé Niè");
-  body.replaceText("QingHeNie", "Qīnghé Niè");
-  body.replaceText("Qinghenie", "Qīnghé Niè");
-  body.replaceText("Qinghe Nie Shi", "Qīnghé Niè Shì");
-  body.replaceText("Qinghe?", "Qīnghé");
+  body.replaceText("(Q|q)ing(H|h)e?.(N|n)ie?.(S|s)hi", "Qīnghé Niè Shì");
+  body.replaceText("(Q|q)ing(H|h)e?.(N|n)ie", "Qīnghé Niè");
+  body.replaceText("(Q|q)ing(H|h)e", "Qīnghé");
   
   //Nie Huaisang (聂怀桑, Niè Huáisāng) 
-  body.replaceText("Nie Huaisang", "Niè Huáisāng");
-  body.replaceText("Nie HuaiSang", "Niè Huáisāng");
+  body.replaceText("(N|n)ie?.(H|h)uai(S|s)ang", "Niè Huáisāng");
   
   //Nie Mingjue (聂明玦, Niè Míngjué) 
-  body.replaceText("Nie Mingjue", "Niè Míngjué");
-  body.replaceText("Nie MingJue", "Niè Míngjué");
+  body.replaceText("(N|n)ie?.(M|m)ing(J|j)ue", "Niè Míngjué");
    
   
   
@@ -192,31 +168,25 @@ function mdzs() {
    **
   **/
   //Qishan Wen Sect (岐山温氏, Qíshān Wēn Shì)
-  body.replaceText("Qishan Wen", "Qíshān Wēn");
-  body.replaceText("QiShan Wen", "Qíshān Wēn");
-  body.replaceText("QishanWen", "Qíshān Wēn");
-  body.replaceText("Qishanwen", "Qíshān Wēn");
-  body.replaceText("Qishan Wen Shi", "Qíshān Wēn Shì");
+  body.replaceText("(Q|q)i(S|s)han?.(W|w)en?.(S|s)hi", "Qíshān Wēn Shì");
+  body.replaceText("(Q|q)i(S|s)han?.(W|w)en", "Qíshān Wēn");
   
   //Wen Ning (温宁, Wēn Níng), courtesy name Qionglin (温琼林, Qiónglín)  Known as the Ghost General (鬼将军, Guǐ jiāngjūn)
-  body.replaceText("Wen Ning", "Wēn Níng");
-  body.replaceText("Wen Qionglin", "Wēn Qiónglín");
-  body.replaceText("Wen QiongLin", "Wēn Qiónglín");
-  body.replaceText("Gui Jiangjun", "Guǐ jiāngjūn");
-  body.replaceText("Gui JiangJun", "Guǐ jiāngjūn");
+  body.replaceText("(W|w)en?.(N|n)ing", "Wēn Níng");
+  body.replaceText("(W|w)en?.(Q|q)iong(L|l)in", "Wēn Qiónglín");
+  body.replaceText("(G|g)ui?.(J|j)iang(J|j)un", "Guǐ jiāngjūn");
   
   //Wen Qing (温情, Wēn Qíng)
-  body.replaceText("Wen Qing", "Wēn Qíng");
+  body.replaceText("(W|w)en?.(Q|q)ing", "Wēn Qíng");
   
   //Wen Ruohan (温若寒, Wēn Ruòhán)
-  body.replaceText("Wen Ruohan", "Wēn Ruòhán");
-  body.replaceText("Wen RuoHan", "Wēn RuòHán");
+  body.replaceText("(W|w)en?.(R|r)uo(H|h)an", "Wēn RuòHán");
   
   //Wen Chao (温晁, Wēn Cháo)
-  body.replaceText("Wen Chao", "Wēn Cháo");
+  body.replaceText("(W|w)en?.(C|c)hao", "Wēn Cháo");
   
   //Wen Xu (温旭, Wēn Xù)
-  body.replaceText("Wen Xu", "Wēn Xù");
+  body.replaceText("(W|w)en?.(X|x)u", "Wēn Xù");
   
   
   
@@ -227,41 +197,30 @@ function mdzs() {
    **
   **/
   //Song Lan (宋岚, Sòng Lán), courtesy name Song Zichen (宋子琛)
-  body.replaceText("Song Lan", "Sòng Lán");
-  body.replaceText("Song Zichen", "Sòng Zichēn");
-  body.replaceText("Song ZiChen", "Sòng Zichēn");
+  body.replaceText("(S|s)ong?.(L|l)an", "Sòng Lán");
+  body.replaceText("(S|s)ong?.(Z|z)i(C|c)hen", "Sòng Zichēn");
   
   //Fuxue (拂雪, Fúxuě)
-  body.replaceText("Fuxue", "Fúxuě");
-  body.replaceText("Fuxue", "Fúxuě");
+  body.replaceText("(F|f)u(X|x)ue", "Fúxuě");
   
   //Xiao Xingchen (晓星尘, Xiǎo Xīngchén) 
-  body.replaceText("Xiao Xingchen", "Xiǎo Xīngchén");
-  body.replaceText("Xiao XingChen", "Xiǎo Xīngchén");
+  body.replaceText("(X|x)iao?.(X|x)ing(C|c)hen", "Xiǎo Xīngchén");
   
   //Shuanghua (霜华, Shuānghuá)
-  body.replaceText("Shuanghua", "Shuānghuá");
-  body.replaceText("ShuangHua", "Shuānghuá");
+  body.replaceText("(S|s)huang(H|h)ua", "Shuānghuá");
   
   //Xue Yang (薛洋, Xuē Yáng) 
-  body.replaceText("Wen Xu", "Xuē Yáng");
-  body.replaceText("Wen Xu", "Xuē Yáng");
+  body.replaceText("(W|w)en?.(X|x)u", "Xuē Yáng");
   
   //Baoshan Sanren (抱山散人, Bàoshān sànrén)
-  body.replaceText("BaoShan SanRen", "Bàoshān Sànrén");
-  body.replaceText("Baoshan Sanren", "Bàoshān Sànrén");
-  body.replaceText("BaoShan Sanren", "Bàoshān Sànrén");
-  body.replaceText("Baoshan SanRen", "Bàoshān Sànrén");
+  body.replaceText("(B|b)ao(S|s)han?.(S|s)an(R|r)en", "Bàoshān Sànrén");
   
   //Cangse Sanren (藏色散人, Cángsè Sànrén)
-  body.replaceText("Cangse SanRen", "Cángsè Sànrén");
-  body.replaceText("CangSe SanRen", "Cángsè Sànrén");
-  body.replaceText("Cangse Sanren", "Cángsè Sànrén");
-  body.replaceText("CangSe Sanren", "Cángsè Sànrén");
+  body.replaceText("(C|c)ang(S|s)e?.(S|s)an(R|r)en", "Cángsè Sànrén");
   
  //Ouyang Zizhen (欧阳子真 Ōuyáng Zizhēn 
-  body.replaceText("Ouyang Zizhen", "Ōuyáng Zizhēn");
-  body.replaceText("CangSe Sanren", "Cángsè Sànrén");
+  body.replaceText("(O|o)u(Y|y)ang?.(Z|z)i(Z|z)hen", "Ōuyáng Zizhēn");
+  body.replaceText("(C|c)ang(S|s)e?.(S|s)an(R|r)en", "Cángsè Sànrén");
   
   
   
@@ -278,24 +237,19 @@ function mdzs() {
   body.replaceText("(G|g)u(Q|q)in", "gǔqín");
   
   //Yi City (Chinese: 义城; pinyin: Yì chéng)
-  body.replaceText("Yi City", "Yì City");
-  body.replaceText("Yi Cheng", "Yì Chéng");
+  body.replaceText("(Y|y)i?.(C|c)ity", "Yì City");
+  body.replaceText("(Y|y)i?.(C|c)heng", "Yì Chéng");
   
   //Dafan Mountain (大梵山, Dà fàn shān)
-  body.replaceText("Dafan Mountain", "Dàfàn Mountain");
-  body.replaceText("Da Fan Mountain", "Dàfàn Mountain");
-  body.replaceText("Da fan shan", "Dàfàn shān");
+  body.replaceText("(D|d)a?.(F|f)an?.(M|m)ountain", "Dàfàn Mountain");
+  body.replaceText("(D|d)a?.(F|f)an?.(S|s)han", "Dàfàn shān");
   
   //Gege (Chinese: 哥哥; pinyin: Gégé
-  body.replaceText("-gege", "-gēge");
+  body.replaceText("-(G|g)e(G|g)e", "-gēge");
   
   //Jiejie (Chinese: 姐姐, Jiějiě)
-  body.replaceText("jiejie", "jiějiě");
-  body.replaceText("Jiejie", "Jiějiě");
+  body.replaceText("(J|j)ie(J|j)ie", "jiějiě");
     
   //shī jiě 师姐 
-  body.replaceText("shijie", "shījiě");
-  body.replaceText("Shijie", "shījiě");
-  
-  
+  body.replaceText("(S|s)hi(J|j)ie", "shījiě");
 }
