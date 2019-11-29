@@ -247,6 +247,9 @@ function mdzs() {
   //Gege (Chinese: 哥哥; pinyin: Gégé
   body.replaceText("-(G|g)e(G|g)e", "-gēge");
   
+  //xiong (兄 Xiōng)
+  body.replaceText("-(X|x)iong", "-xiōng");
+  
   //Jiejie (Chinese: 姐姐, Jiějiě)
   body.replaceText("(J|j)ie(J|j)ie", "jiějiě");
     
