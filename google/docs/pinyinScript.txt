@@ -244,6 +244,9 @@ function mdzs() {
   body.replaceText("(D|d)a?.(F|f)an?.(M|m)ountain", "Dàfàn Mountain");
   body.replaceText("(D|d)a?.(F|f)an?.(S|s)han", "Dàfàn shān");
   
+  //ge (Chinese: 哥; pinyin: 
+  body.replaceText("-(G|g)e", "-gē;
+  
   //Gege (Chinese: 哥哥; pinyin: Gégé
   body.replaceText("-(G|g)e(G|g)e", "-gēge");
   
@@ -252,6 +255,8 @@ function mdzs() {
   
   //Jiejie (Chinese: 姐姐, Jiějiě)
   body.replaceText("(J|j)ie(J|j)ie", "jiějiě");
+  //Jie (Chinese: 姐, Jiě)
+  body.replaceText("-(J|j)ie", "jiě");
     
   //shī jiě 师姐 
   body.replaceText("(S|s)hi(J|j)ie", "shījiě");
