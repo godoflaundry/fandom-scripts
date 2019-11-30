@@ -245,7 +245,7 @@ function mdzs() {
   body.replaceText("(D|d)a?.(F|f)an?.(S|s)han", "Dàfàn shān");
   
   //ge (Chinese: 哥; pinyin: 
-  body.replaceText("-(G|g)e", "-gē;
+  body.replaceText("-(G|g)e", "-gē");
   
   //Gege (Chinese: 哥哥; pinyin: Gégé
   body.replaceText("-(G|g)e(G|g)e", "-gēge");
