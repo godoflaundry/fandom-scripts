@@ -2,6 +2,7 @@ function onOpen() {
   var ui = DocumentApp.getUi();
   ui.createMenu('Pinyin')
       .addItem('mdzs', 'mdzs')
+      .addItem('guardian', 'guardian')
       .addToUi();
 }
 
@@ -260,4 +261,162 @@ function mdzs() {
     
   //shī jiě 师姐 
   body.replaceText("(S|s)hi(J|j)ie", "shījiě");
+}
+
+
+function guardian() {
+  
+  var body = DocumentApp.getActiveDocument().getBody();
+  
+  //Zhao Yunlan (赵云澜 / 趙云瀾, Zhào Yúnlán)
+  body.replaceText("(C|c)hief?.(Z|z)hao", "Chief Zhào");
+  body.replaceText("(Z|z)hao?.(Y|y)un?.(L|l)an", "Zhào Yúnlán");
+  body.replaceText("(Y|y)un(L|l)an", "Yúnlán");
+  
+  //Shen Wei (沈巍	Shěn Wēi)
+  body.replaceText("(S|s)hen?.(W|w)ei", "Shěn Wēi");
+  body.replaceText("(P|p)rofessor?.(S|s)hen", "Professor Shěn");
+  body.replaceText("(H|h)ei?.(P|p)ao?.(S|s)hi", "Hēi Páo Shǐ");
+  
+  //Zhao Xinci (赵心慈	Zhào Xīncí)
+  body.replaceText("(Z|z)hao?.(X|x)in?.(C|c)i", "Zhào Xīncí");
+  
+  //Guo Ying 郭英 Guō Yīng
+  body.replaceText("(G|g)uo?.(Y|y)ing", "Guō Yīng");
+
+  //Guo Changcheng 郭长城 Guō Chángchéng
+  body.replaceText("(G|g)uo?.(C|c)hang?.(C|c)heng", "Guō Chángchéng");
+
+  //Zhu Hong 祝红 Zhù hóng
+  body.replaceText("(Z|z)hu?.(H|h)ong", "Zhù Hóng");
+
+  //Da Qing 大庆 Dàqìng
+  body.replaceText("(D|d)a?.(Q|q)ing", "Dà Qìng");
+
+  //Chu Shuzhi 楚恕之 Chǔ shù zhī
+  body.replaceText("(C|c)hu?.(S|s)hu?.(Z|z)hi", "Chǔ Shùzhī");
+  
+  //Wang Zheng 汪徵 Wāng zhēng
+  body.replaceText("(W|w)ang?.(Z|z)heng", "Wāng Zhēng");
+
+  //Lin Jing 林静 Lín Jìng
+  body.replaceText("(L|l)in?.(J|j)ing", "Lín Jìng");
+  
+  //Sang Zan 桑赞 Sāng Zàn
+  body.replaceText("(S|s)ang?.(Z|z)an", "Sāng Zàn");
+  
+  //Old Li 老李 lǎo Lǐ Old Lǐ
+  body.replaceText("(O|o)ld?.(L|l)i", "Old Lǐ");
+  body.replaceText("(L|l)ao?.(L|l)i", "Lǎo Lǐ");
+  
+  //Ye Zun 夜尊 Yè Zūn
+  body.replaceText("(Y|y)e?.(Z|z)un", "Yè Zūn");
+  
+  //Zhu Jiu 烛九 Zhú jiǔ
+  body.replaceText("(Z|z)hu?.(J|j)iu", "Zhú jiǔ");
+  
+  //Ya Qing 鸦青 Yā Qīng
+  body.replaceText("(Y|y)a?.(Q|q)ing", "Yā Qīng");
+  
+  //Sha Ya 沙雅 Shā Yǎ
+  body.replaceText("(S|s)ha?.(Y|y)a", "Shā Yǎ");
+  
+  //Wang Xiangyang 王向阳 Wáng Xiàngyáng
+  body.replaceText("(W|w)ang?.(X|x)iang?.(Y|y)ang", "Wáng Xiàngyáng");
+  
+  //Li Qian 李茜 Lǐ Qiàn
+  body.replaceText("(L|l)i?.(Q|q)ian", "Lǐ Qiàn");
+  
+  //Cheng Xinyan 成心妍 Chéng Xīnyán
+  body.replaceText("(C|c)heng?.(X|x)in?.(Y|y)an", "Chéng Xīnyán");
+  
+  //Ouyang Zhen 欧阳贞 Ōuyáng Zhēn
+  body.replaceText("(O|o)u?.(Y|y)ang?.(Z|z)hen", "Ōuyáng Zhēn");
+  
+  //Professor Zhou 周教授 Zhōu-jiàoshòu
+  body.replaceText("(P|p)rofessor?.(Z|z)hou", "Professor Zhōu");
+  body.replaceText("(T|t)eacher?.(Z|z)hou", "Teacher Zhōu");
+  body.replaceText("(Z|z)hou?.(J|j)iao?.(S|s)hou", "Zhōu-jiàoshòu");
+  
+  //Wu Tian'en 吴天恩 Wú Tiān'ēn
+  body.replaceText("(W|w)u?.(T|t)ian?.(E|e)n", "Wú Tiān'ēn");
+  
+  //Wu Xiaojun 吴晓君 Wú Xiǎojūn
+  body.replaceText("(W|w)u?.(X|x)iao?.(J|j)un", "Wú Xiǎojūn");
+  
+  //Fourth Uncle 四叔 Sì Shū
+  body.replaceText("(S|s)ha?.(Y|y)a", "Shā Yǎ");
+
+  //Ying Chun 迎春 Yíng Chūn
+  body.replaceText("(Y|y)ing?.(C|c)hun", "Yíng Chūn");
+  
+  //Cong Bo 丛波 Cóng Bō
+  body.replaceText("(C|c)ong?.(B|b)o", "Cóng Bō");
+
+  //Gao Jingfeng 高劲风 Gāo Jìngfēng
+  body.replaceText("(G|g)ao?.(J|j)ing?.(F|f)eng", "Gāo Jìngfēng");
+  
+  //Guo Ying 郭英 Guō Yīng
+  body.replaceText("(G|g)uo?.(Y|y)ing", "Guō Yīng");
+
+  //An Bai 安柏 Ān Bǎi
+  body.replaceText("(A|a)n?.(B|b)ai", "Ān Bǎi");
+
+  //Ye Huo 野火 Yě Huǒ
+  body.replaceText("(Y|y)e?.(H|h)uo", "Yě Huǒ");
+
+  //Da Ji 大吉 Dà Jí
+  body.replaceText("(D|d)a?.(J|j)i", "Dà Jí");
+  
+  //Bai Suxia 白素霞 Bái Sùxiá
+  body.replaceText("(B|b)ai?.(S|s)u?.(X|x)ia", "Bái Sùxiá");
+
+  //Shen Xi 沈溪 Shěn Xī
+  body.replaceText("(S|s)hen?.(X|x)i", "Shěn Xī");
+
+  //Zhang Shi 獐狮 Zhāng Shī
+  body.replaceText("(Z|z)hang?.(S|s)hi", "Zhāng Shī");
+
+  //Chu Nianzhi 楚念之 Chǔ Niànzhī
+  body.replaceText("(C|c)hu?.(N|n)ian?.(Z|z)hi", "Chǔ Niànzhī");
+
+  //Guo Changjiang 郭长江 Guō Chángjiāng
+  body.replaceText("(G|g)uo?.(C|c)hang?.(J|j)iang", "Guō Chángjiāng");
+
+  //Guo Xiong 郭雄 Guō Xióng
+  body.replaceText("(G|g)uo?.(X|x)iong", "Guō Xióng");
+
+  
+  //
+  //
+  // PLACES
+  //
+  //
+  
+  //Dragon City (龙城 Lóng chéng)
+  body.replaceText("(L|l)ong?.(C|c)heng", "Lóng Chéng");
+  body.replaceText("(L|l)ong?.(C|c)ity", "Lóng City");
+  
+  //
+  //
+  // TERMS
+  //
+  //
+  
+  //Haixing 海星 Hǎixīng
+  body.replaceText("(H|h)ai?.(X|x)ing", "Hǎixīng");
+  
+  //Dixing 地星(人) Dexīngrén
+  body.replaceText("(D|d)i?.(X|x)ing?.(R|r)en", "Dixīngrén");
+  body.replaceText("(D|d)i?.(X|x)ing", "Dixīng");
+  
+  //Yashou 亚兽 Yàshòu 
+  body.replaceText("(Y|y)a?.(S|s)hou", "Yàshòu");
+  
+  //Rebel Chieftain 贼酋 zéiqiú
+  body.replaceText("(Z|z)ei?.(Q|q)iu", "Zéiqiú");
+  
+  //Regent  摄政官 shèzhènggūan
+  body.replaceText("(S|s)he?.(Z|z)heng?.(G|g)uan", "Shèzhènggūan");
+  
 }
