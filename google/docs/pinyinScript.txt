@@ -272,11 +272,15 @@ function guardian() {
   body.replaceText("(C|c)hief.?(Z|z)hao", "Chief Zhào");
   body.replaceText("(Z|z)hao.?(Y|y)un.?(L|l)an", "Zhào Yúnlán");
   body.replaceText("(Y|y)un(L|l)an", "Yúnlán");
+  //in the past: Kunlan Kūnlún | 昆仑
+  body.replaceText("(K|k)un(L|l)un", "Kūnlún");
   
-  //Shen Wei (沈巍	Shěn Wēi)
+  
+  //Shen Wei (沈巍	Shěn Wēi) or Xiao Wei Xiǎo Wēi 小巍
   body.replaceText("(S|s)hen.?(W|w)ei", "Shěn Wēi");
   body.replaceText("(P|p)rofessor.?(S|s)hen", "Professor Shěn");
   body.replaceText("(H|h)ei.?(P|p)ao.?(S|s)hi", "Hēi Páo Shǐ");
+  body.replaceText("(X|x)iao.?(W|w)ei", "Xiǎo Wēi")
   
   //Zhao Xinci (赵心慈	Zhào Xīncí)
   body.replaceText("(Z|z)hao.?(X|x)in.?(C|c)i", "Zhào Xīncí");
