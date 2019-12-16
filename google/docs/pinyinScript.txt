@@ -32,12 +32,14 @@ function mdzs() {
   //Jiang Cheng (江澄 Jiāng Chéng), courtesy name Jiang Wanyin (江晚吟 Jiāng Wǎnyín), and his title Sandu Shengshou (三毒圣手 Sāndú shèngshǒu).
   body.replaceText("(J|j)iang.?(C|c)heng", "Jiāng Chéng");
   body.replaceText("(J|j)iang.?(W|w)an(Y|y)in", "Jiāng Wǎnyín");
-  body.replaceText("(S|s)an(D|d)u.?(S|s)heng(S|s)hou", "Sāndú shèngshǒu");
+  body.replaceText("(S|s)an(D|d)u.?(S|s)heng(S|s)hou", "Sāndú Shèngshǒu");
+  body.replaceText("(S|s)an(D|d)u.? ", "Sāndú.? ");
   
   //Yu Ziyuan (虞紫鸢, Yú Zǐyuān) and title Madam Yu (虞夫人, Yú fūrén) and the Violet Spider (紫蜘蛛, Zǐ Zhīzhū).
   body.replaceText("(Y|y)u.?(Z|z)i(Y|y)uan", "Yú Zǐyuān");
   body.replaceText("(Z|z)i(Y|y)uan", "Zǐyuān");
   body.replaceText("(Y|y)u.?(F|f)uren", "Yú fūrén");
+  body.replaceText("(M|m)adame.?(Y|y)u", "Madame Yú");
   body.replaceText("(Z|z)i.?(Z|z)hi(Z|z)hu", "Zǐ Zhīzhū");
   
   //Jiang Fengmian (江枫眠, Jiāng Fēngmián)
@@ -106,9 +108,10 @@ function mdzs() {
   //Lan Zhan (蓝湛 Lán Zhàn), courtesy name Lan Wangji (蓝忘机, Lán Wàngjī) , and title Hanguang-Jun (含光君, Hánguāng-jūn),
   body.replaceText("(L|l)an.?(Z|z)han", "Lán Zhàn");
   body.replaceText("Zhan-", "Zhàn-");
-  body.replaceText("(L|l)an.?(W|w)angji", "Lán Wàngjī");
+  body.replaceText("(L|l)an.?(W|w)ang.?(J|j)i", "Lán Wàngjī");
   body.replaceText("(W|w)ang(J|j)i", "Wàngjī");
-  body.replaceText("(H|h)an(G|g)uan.?(J|j)un", "Hánguāng-jūn");
+  body.replaceText("(H|h)an(G|g)uang.?(J|j)un", "Hánguāng-jūn");
+  body.replaceText("(M|m)aster (L|l)an", "Master Lán");
   
   //Lan Qiren (蓝启仁, Lán Qǐrén) 
   body.replaceText("(L|l)an.?(Q|q)ui(R|r)en", "Lán Qǐrén");
@@ -189,6 +192,9 @@ function mdzs() {
   //Wen Xu (温旭, Wēn Xù)
   body.replaceText("(W|w)en.?(X|x)u", "Wēn Xù");
   
+  
+  //Wen Zhuliu Wēn Zhúliú 温逐流
+  body.replaceText("(W|w)en.?(Z|z)hu.?(L|l)iu", "Wēn Zhúliú")
   
   
   
