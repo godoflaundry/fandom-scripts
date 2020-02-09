@@ -1,0 +1,40 @@
+#workskin table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#workskin td,
+#workskin th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#workskin tr:nth-child(4n+3),
+#workskin tr:nth-child(4n+4) {
+  background-color: #dddddd;
+}
+
+#workskin h2:not(.title) {
+  border-bottom: 5px solid #7a0000;
+}
+
+#workskin div.notes {
+  background: gainsboro;
+}
+
+#workskin .chapter.preface h3.title {
+  display: none;
+}
+
+#workskin th {
+  background-color: #474747;
+  font-weight: bold;
+  color: white;
+}
+
+#workskin audio {
+  width: 100%;
+  max-width: 500px;
+}
