@@ -1,0 +1,82 @@
+function onOpen(){
+var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var menuEntries = [ {name: "runMatching-simple()", functionName: "runMatchingSimple"},
+                      {name: "runMatching-PiviotData()", functionName: "runMatchingPivotData"}
+                                           ];
+  ss.addMenu("Run Matching", menuEntries);
+}
+
+function getColumnByName(data, colName) {
+  var col = data[0].indexOf(colName);
+  
+  if(col < 0) {
+    return [];
+  }
+  
+  var columnValues = [];
+  for (var i = 1; i < data.length; i++){
+    columnValues[i] = data[i][col];
+  }
+  return columnValues;
+}
+
+
+function addValueToKey(fandomsMap, key, value) {
+    fandomsMap[key] = fandomsMap[key] || [];
+    fandomsMap[key].push(value);
+}
+
+
+function runMatchingSimple() {
+  
+  var ss=SpreadsheetApp.getActive();
+  
+  var data = ss.getSheetByName("normalized_data").getDataRange().getValues();
+  var participants = getColumnByName(data, "blue team winners");
+  
+  var fandomsMap = {};
+
+  participants.forEach(function(participant) {
+    fandoms = getColumnByName(data, participant)
+      fandoms.forEach(function(fandom) {
+        if (!(!fandom || fandom.length === 0)) {
+          addValueToKey(fandomsMap, fandom, participant)
+        }
+      })
+  })
+  
+  var outputSheet = ss.getSheetByName("matched!!!");
+  outputSheet.clearContents();
+  
+  var str = "no";
+  for(var k in fandomsMap) {
+     str = str + "\n" + k +": " + fandomsMap[k];
+    if(fandomsMap[k].length > 1) {
+      outputSheet.appendRow([k,fandomsMap[k].toString()]);
+    }
+  }
+  
+  outputSheet.sort(1)
+  
+}
+
+
+function runMatchingPivotData() {
+  
+  var ss=SpreadsheetApp.getActive();
+  
+  var data = ss.getSheetByName("normalized_data").getDataRange().getValues();
+  var participants = getColumnByName(data, "blue team winners");
+  
+  var pivotData = ss.getSheetByName("piviot_data");
+  pivotData.clearContents();
+  pivotData.appendRow(["fandom","participant"]);
+  participants.forEach(function(participant) {
+    fandoms = getColumnByName(data, participant)
+      fandoms.forEach(function(fandom) {
+        if (!(!fandom || fandom.length === 0)) {
+          pivotData.appendRow([fandom,participant]);
+        }
+      })
+  })
+}
