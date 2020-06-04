@@ -20,7 +20,10 @@
 }
 
 #workskin div.notes {
-  background: gainsboro;
+  background: #fafafa;
+  border: 1px solid #c1cdcd;
+  border-left: 8px solid #c1cdcd;
+  padding: 25px;
 }
 
 #workskin .chapter.preface h3.title {
@@ -37,8 +40,6 @@
   width: 100%;
   max-width: 500px;
 }
-
-
 
 #workskin .coverFloat {
   display: inline-block;
