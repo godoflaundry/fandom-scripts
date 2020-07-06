@@ -56,3 +56,10 @@
   width: 100%;
   max-width: 450px;
 }
+
+#workskin .fic {
+  float: none;
+  display: block;
+  clear: both;
+  padding-top: 25px;
+}
