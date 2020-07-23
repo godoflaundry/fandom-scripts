@@ -1,7 +1,18 @@
+#workskin div.notes {
+  border: 1px solid #c1cdcd;
+  border-left: 8px solid #c1cdcd;
+  padding: 25px;
+}
+
 #workskin table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+}
+
+#workskin table.stream {
+  width: 100%;
+  max-width: 600px;
 }
 
 #workskin td,
@@ -13,17 +24,11 @@
 
 #workskin tr:nth-child(even) {
   background-color: #dddddd;
+  color: black;
 }
 
 #workskin h2:not(.title) {
   border-bottom: 5px solid #7a0000;
-}
-
-#workskin div.notes {
-  background: #fafafa;
-  border: 1px solid #c1cdcd;
-  border-left: 8px solid #c1cdcd;
-  padding: 25px;
 }
 
 #workskin .chapter.preface h3.title {
