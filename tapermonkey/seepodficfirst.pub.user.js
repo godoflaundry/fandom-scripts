@@ -6,10 +6,11 @@
 // @author       GodOfLaundryBaskets
 // @include      http*://archiveofourown.org/*works*
 // @require      http://code.jquery.com/jquery-3.5.1.min.js
-// @require      http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js
-// @require      https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js
+// @updateURL    https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/seepodficfirst.pub.user.js
+// @downloadURL  https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/seepodficfirst.pub.user.js
 // @grant        none
 // ==/UserScript==
+
 
 function addPodficsOnSamePage() {
     const children = Array.from(document.querySelectorAll('div.children'));
