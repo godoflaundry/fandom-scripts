@@ -1,0 +1,5 @@
+Check out <a href="https://github.com/BrickGrass/Blanket-Permission-Highlighter">BrickGrass site</a> for a great walkthrough on how to get this script working.
+
+1) Install <a href="https://www.tampermonkey.net/">Tampermonkey</a> or <a href="">Greasemonkey</a>
+2) Click this <a href="">[link]</a> to install the related works extension
+3) Enjoy!
