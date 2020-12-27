@@ -13,7 +13,7 @@ $( document ).ready(function() {
     if (m === null) {
         return;
     }
-    console.log("On a profile, fetching bp info...")
+    console.log("On a profile, adding realted work button info...")
 
     $("#dashboard ul").first().append(
         `<li><a href="${m[0]}/related_works?target=blank">Related Works</a></li>`
