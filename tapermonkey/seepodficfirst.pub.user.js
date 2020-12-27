@@ -8,6 +8,7 @@
 // @updateURL    https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/seepodficfirst.pub.user.js
 // @downloadURL  https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/seepodficfirst.pub.user.js
 // @grant        none
+/* globals jQuery, $, waitForKeyElements */
 // ==/UserScript==
 
 
@@ -24,19 +25,19 @@ function addPodficsOnSamePage() {
 function addPodficsAtEndOfWork() {
     const jumpBlock = Array.from(document.querySelectorAll('p.jump'));
 
-    if (!jumpBlock.length) {
+    if (!jumpBlock.length || !jumpBlock[0].textContent.includes("other works inspired by this one")) {
         return false;
     }
 
     $(jumpBlock).css("font-weight", "bold")
-    $(jumpBlock).css("background-color", "#BDA0CB");;
+    $(jumpBlock).css("background-color", "#e2e2e2");;
 }
 
-(function() {
+$( document ).ready(function() {
     'use strict';
     var added = addPodficsOnSamePage();
 
     if(!added) {
         addPodficsAtEndOfWork()
     }
-})();
+});
