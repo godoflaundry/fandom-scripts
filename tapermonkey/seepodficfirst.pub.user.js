@@ -1,6 +1,5 @@
 // ==UserScript==
 // @name         See Podfic First
-// @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  moves the inspired to the top of the page
 // @author       GodOfLaundryBaskets
