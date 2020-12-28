@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Related Work Button
-// @version      0.1
+// @version      0.1.1
 // @description  Adds a Related Works button to the ao3 user page
 // @author       godoflaundrybaskets
 // @include      http*://archiveofourown.org/*users*
@@ -19,7 +19,7 @@ $( document ).ready(function() {
     }
     console.log("On a profile, adding realted work button info...")
 
-    $("#dashboard ul").first().append(
+    $("#dashboard ul").last().append(
         `<li><a href="${m[0]}/related_works?target=blank">Related Works</a></li>`
     )
 
