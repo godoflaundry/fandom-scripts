@@ -6,7 +6,7 @@
 ***
 
 # Related Work Button
-2. Click this [[link]](https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/relatedwork.pub.user.js) to install the related work extension
+2. Click this **[[link]](https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/relatedwork.pub.user.js)** to install the related work extension
 3. Enjoy!
 
 The button for Related Works will be the last item in the list (underneath Gifts) in the User Profile Navigation options.
@@ -16,7 +16,7 @@ The button for Related Works will be the last item in the list (underneath Gifts
 ***
 
 # See Podfic First in Work
-2. Click this [[link]](https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/seepodficfirst.pub.user.js) to install the See Podfic First extension
+2. Click this **[[link]](https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/seepodficfirst.pub.user.js)** to install the See Podfic First extension
 3. Enjoy!
 
 If the podfic exists on the first page (or you use the "show entire work button), it'll show up like this:
