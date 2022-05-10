@@ -267,8 +267,6 @@ function mdzsReplacements() {
       ## qiánkūn dài 乾坤袋 (Qiankun bag)
       qiankun dai|qiánkūn dài
       qiankun|qiánkūn
-      ## Jìngshì 静室 - LWJ’s room
-      jingshi|Jìngshì
       ## Hánshì 寒室 - LXC’s room
       hanshi|Hánshì
       ## Míngshì 冥室 - Building where they do summonings
