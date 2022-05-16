@@ -17,6 +17,32 @@ function onOpen() {
 }
 
 /**
+ *
+ * @param body
+ * @param pattern
+ * @param newString Replacement for the pattern
+ * @param underline Whether to underline the replacement. Can be useful when
+ * trying to understand what the script is doing.
+ */
+function replaceWithUnderline(body, pattern, newString, underline) {
+  if (underline) {
+    var found = body.findText(pattern);
+    while (found) {
+      var elem = found.getElement();
+      if (found.isPartial()) {
+        var start = found.getStartOffset();
+        var end = found.getEndOffsetInclusive();
+        elem.setUnderline(start, end, true);
+      } else {
+        elem.setUnderline(true);
+      }
+      found = body.findText(pattern, found);
+    }
+  }
+  body.replaceText(pattern, newString);
+}
+
+/**
  * Returns a regex string to match a sequence of words, allowing an optional
  * dash (-) or space ( ) between each word. The beginning and end of the
  * matching sequence must be at a word boundary.
@@ -835,12 +861,13 @@ function verifyReplacements(allReplacementsString) {
  * Use the hard-coded replacement rules string to replace matches with pinyin
  * in the associated doc.
  */
-function replaceAll(allReplacementsString) {
+function replaceAll(allReplacementsString, underline) {
   const body = DocumentApp.getActiveDocument().getBody();
   const replacements = splitReplacements(allReplacementsString);
   replacements.forEach(function(element) {
-    body.replaceText(
-        wordsMatchIgnoreCaseRegex(element.words), element.replacement);
+    replaceWithUnderline(
+        body, wordsMatchIgnoreCaseRegex(element.words), element.replacement,
+        underline);
   });
 }
 
@@ -850,7 +877,7 @@ function mdzs() {
   // Doesn't actually alter the doc.
   verifyReplacements(mdzsReplacements());
   // Replace text in the doc with pinyin!
-  replaceAll(mdzsReplacements());
+  replaceAll(mdzsReplacements(), false);
 }
 
 /** Function that runs when users use the guardian menu option. */
@@ -859,7 +886,7 @@ function guardian() {
   // Doesn't actually alter the doc.
   verifyReplacements(guardianReplacements());
   // Replace text in the doc with pinyin!
-  replaceAll(guardianReplacements());
+  replaceAll(guardianReplacements(), false);
 }
 
 /** Function that runs when users use the nirvana in fire menu option. */
@@ -868,5 +895,5 @@ function nirvana() {
   // Doesn't actually alter the doc.
   verifyReplacements(nirvanaReplacements());
   // Replace text in the doc with pinyin!
-  replaceAll(nirvanaReplacements());
+  replaceAll(nirvanaReplacements(), false);
 }
