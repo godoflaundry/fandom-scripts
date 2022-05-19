@@ -6,7 +6,6 @@
 // @include      http*://archiveofourown.org/*works*
 // @require      http://code.jquery.com/jquery-3.5.1.min.js
 // @updateURL    https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/seepodficfirst.pub.user.js
-// @downloadURL  https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/seepodficfirst.pub.user.js
 // @grant        none
 /* globals jQuery, $, waitForKeyElements */
 // ==/UserScript==
