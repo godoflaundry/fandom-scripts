@@ -7,8 +7,8 @@
 
 # Related Work Button
 2. Click this **[[link]](https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/relatedwork.pub.user.js)** to install the related work extension
-3. 2. Click this [link](https://github.com/Cathalinaheart/AO3-Tone-Marks/raw/main/Tone%20Marks.user.pub.js ) to install the related work extension
-4. Enjoy!
+3. 2. Click this [link](https://github.com/Cathalinaheart/AO3-Tone-Marks/raw/main/Tone%20Marks.user.pub.js) to install the related work extension
+5. Enjoy!
 
 The button for Related Works will be the last item in the list (underneath Gifts) in the User Profile Navigation options.
 
