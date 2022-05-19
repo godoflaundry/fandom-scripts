@@ -1,12 +1,14 @@
+
 // ==UserScript==
-// @name         Related Work Button
-// @version      0.1.1
-// @description  Adds a Related Works button to the ao3 user page
-// @author       godoflaundrybaskets
-// @include      http*://archiveofourown.org/*users*
-// @require      http://code.jquery.com/jquery-3.5.1.min.js
-// @updateURL    https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/relatedwork.pub.user.js
-/* globals jQuery, $, waitForKeyElements */
+// @name         Tone Marks
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  try to take over the world!
+// @author       Cathalinaheart
+// @match        https://archiveofourown.org/*
+// @updateURL    https://github.com/Cathalinaheart/AO3-Tone-Marks/blob/main/Tone%20Marks.user.pub.js
+// @downloadURL  https://github.com/Cathalinaheart/AO3-Tone-Marks/blob/main/Tone%20Marks.user.pub.js
+// @grant        none
 // ==/UserScript==
 
 const user_regex = /https:\/\/archiveofourown\.org\/users\/([^/]+)/;
