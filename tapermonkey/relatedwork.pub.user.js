@@ -6,7 +6,6 @@
 // @include      http*://archiveofourown.org/*users*
 // @require      http://code.jquery.com/jquery-3.5.1.min.js
 // @updateURL    https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/relatedwork.pub.user.js
-// @downloadURL  https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/relatedwork.pub.user.js
 /* globals jQuery, $, waitForKeyElements */
 // ==/UserScript==
 
