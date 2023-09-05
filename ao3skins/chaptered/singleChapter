@@ -7,15 +7,24 @@
 </p><table>
 <tbody>
 <tr>
-    <th>Chapter</th>
+    <th>Upload Location</th>
     <th>Stream</th>
     <th>Size</th>
     <th>Length</th>
   </tr>
   <tr>
-    <td>CHP_NUM</td>
+    <td>on archive.org</td>
     <td>
-<a href="MP3_LINK" rel="nofollow">[link to mp3 - chapter CHP_NUM]</a><br />
+<a href="MP3_LINK" rel="nofollow">[link to mp3]</a><br />
+<br />
+</td>
+    <td>MP3_SIZE MB</td>
+    <td>MP3_LENGTH</td>
+  </tr>
+  <tr>
+    <td>on backblaze</td>
+    <td>
+<a href="MP3_LINK" rel="nofollow">[link to mp3]</a><br />
 <br />
 </td>
     <td>MP3_SIZE MB</td>
