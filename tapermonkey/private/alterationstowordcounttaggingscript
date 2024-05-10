@@ -1,0 +1,86 @@
+https://gist.github.com/BrickGrass/6ddece6536cb1b0558cf6f4d8eeb2ad9
+
+
+const wordcount_tags = {
+    "0-99": "Wordcount: 0-100",
+    "0-1500": "Wordcount: 0-1.500",
+    "1000-4999": "Wordcount: 1.000-5.000",
+    "0-4999" : "Wordcount: 0-5.000",
+    "100-100" : "Drabble",
+    "5000-9999": "Wordcount: 5.000-10.000",
+    "10000-29999": "Wordcount: 10.000-30.000",
+    "30000-49999": "Wordcount: 30.000-50.000",
+    "50000-99999": "Wordcount: 50.000-100.000",
+    "100000-149999": "Wordcount: 100.000-150.000",
+    "150000-9999999999999": "Wordcount: Over 150.000"
+}
+
+function autopopulate_wordcount() {
+    if (this === window) {
+        return; // Don't know why, but the id selector also returns window?
+    }
+
+    let dds = $(this).find("fieldset > fieldset > dl > dd");
+    let tag_dd = dds[1];
+    let tag_list = $(tag_dd).children("ul");
+
+    let tag_input = $(this).find("[id=bookmark_tag_string_autocomplete]");
+    tag_input = tag_input[0]; // get actual DOM node
+
+    // what page is this? can we find the wordcount?
+    let href = window.location.href;
+    let wordcount = null;
+    let isWIP = "";
+    if (!href.match(work_bookmarks_url) && href.match(work_url)) {
+        // Work page, need to look in slightly different place for wordcount
+
+        wordcount = $("#main div.wrapper dd.stats dd.words");
+    } else if (href.match(series_url)) {
+        // Series page, need to look in slightly different place for wordcount
+
+        wordcount = $("#main div.wrapper dd.stats dd").first();
+    } else if (href.match(bookmark_form_url)) {
+        // Dedicated bookmark edit page, wordcount not accessable
+        return;
+    } else {
+        // All other pages have the bookmark form nested within a bookmark article
+
+        let bookmark_article = $(this).closest("li.bookmark[role=article]");
+        wordcount = $(bookmark_article).find("dl.stats > dd.words");
+        isWIP = $(bookmark_article).find("div.header > ul.required-tags > li > a> span.iswip").text()
+        // Series listings have wordcount laid out differently
+        if (wordcount.length === 0) {
+            wordcount = $(bookmark_article).find("dl.stats > dd").first();
+        }
+    }
+
+    wordcount = wordcount.text();
+    wordcount = wordcount.replace(num_separators, "");
+    wordcount = parseInt(wordcount);
+
+    let tag = "";
+    for (const [range, tag_str] of Object.entries(wordcount_tags)) {
+        let [ low, high ] = range.split("-");
+        [ low, high ] = [ parseInt(low), parseInt(high) ];
+
+        if (low <= wordcount && wordcount <= high) {
+            if(tag == "") {
+                tag = tag_str;
+            } else {
+                tag = tag + ", " + tag_str;
+            }
+        }
+    }
+
+    if(isWIP == "Work in Progress") {
+        tag = tag + ", Unfinished"
+    }
+
+    // adding tag spoofing from: https://github.com/LazyCats-dev/ao3-podfic-posting-helper/blob/main/src/inject.js
+    const event = new InputEvent('input', {bubbles: true, data: tag});
+    tag_input.value = tag;
+    // Replicates the value changing.
+    tag_input.dispatchEvent(event);
+    // Replicates the user hitting comma.
+    tag_input.dispatchEvent(new KeyboardEvent('keydown', {'key': ','}));
+}
