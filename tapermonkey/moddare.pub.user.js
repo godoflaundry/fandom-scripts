@@ -21,7 +21,8 @@ const words = [ "Octopus",
                "Ectoplasm",
                "Adhesive",
                "Mollify",
-               "Exclamation Point!"];
+               "Exclamation Point",
+              "Exclamation Mark"];
 
 function moddare() {
     words.forEach((word) => {
