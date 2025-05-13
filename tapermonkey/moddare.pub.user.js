@@ -27,7 +27,7 @@ function moddare() {
     words.forEach((word) => {
         if ($("*:icontains('"+word+"')").length > 0) {
             // Text found on the page
-            alert("mod dare found! " + word);
+            $("div.flash").first().append("<br /><br/><br/>").append("<h2 align=\"center\" class='title heading'><b>mod dare found: "+word+" </b></h2><br/><br/><br/><br/>");
         }
     })
 }
