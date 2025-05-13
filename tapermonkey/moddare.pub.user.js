@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         alert on mod dare
-// @version      0.1
+// @version      1.0
 // @description  moves the inspired to the top of the page
 // @author       GodOfLaundryBaskets
 // @include      http*://archiveofourown.org/*
