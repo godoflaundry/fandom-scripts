@@ -5,8 +5,8 @@
 // @author       GodOfLaundryBaskets
 // @include      http*://archiveofourown.org/*
 // @require      http://code.jquery.com/jquery-3.5.1.min.js
-// @updateURL    https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/seepodficfirst.pub.user.js
-// @downloadURL  https://github.com/godoflaundry/fandom-scripts/raw/master/tapermonkey/seepodficfirst.pub.user.js
+// @updateURL    https://github.com/godoflaundry/fandom-scripts/blob/master/tapermonkey/moddare.pub.user.js
+// @downloadURL  https://github.com/godoflaundry/fandom-scripts/blob/master/tapermonkey/moddare.pub.user.js
 // @grant        none
 // ==/UserScript==
 
