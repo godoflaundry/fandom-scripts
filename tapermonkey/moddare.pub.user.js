@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         alert on mod dare
 // @version      1.0
-// @description  moves the inspired to the top of the page
+// @description  adds a giant header to the top of the ao3 page letting you know that your word has been found
 // @author       GodOfLaundryBaskets
 // @include      http*://archiveofourown.org/*
 // @require      http://code.jquery.com/jquery-3.5.1.min.js
